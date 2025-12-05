@@ -1,9 +1,9 @@
 body{
   margin: 0;
   padding: 0;
-  font-family: Roboto;
+  font-family: 'Times New Roman', Times, serif;
 }
-header,.section-one,.section-two,.section-three,.section-four,footer{
+header,footer{
   padding: 0 10%;
 }
 header,.section-one,footer{
@@ -33,8 +33,9 @@ h3{
 /*SECTION ONE*/
 .section-one{
   display: flex;
-  justify-content: ce;
+  padding: 5% 10%;
 }
+
 .section-one h2{
   font-size: 48px;
   color: #F9FAF8;
@@ -47,32 +48,85 @@ p{
 button{
   background-color: #3882F6;
   color: #F9FAF8;
+  border-radius: 5px;
+  padding: 1% 3%;
+  border: none;
 }
 .section-one img{
   height: auto;
-  width: auto;
+  width: 100%;
 }
 
 /*SECTION TWO*/
+.section-two{
+  padding: 2% 10% 5%;
+}
+.section-two h2{
+  text-align: center;
+  margin: 0;
+}
 .section-two ul{
   display: flex;
+  justify-content: center;
   list-style: none;
+}
+li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 /*SECTION THREE*/
 .quote{
+  margin: 0;
   font-size: 36px;
   color: #1f2937;
   font-weight: 300;
+  text-align: justify;
 }
 .section-three{
+  padding: 5% 15%;
   background-color: #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-three figcaption{
+  align-self: flex-end;
+  font-weight: 900;
 }
 
-
-.action{
+/*SECTION FOUR*/
+.section-container{
   background-color: #3882F6;
+  border-radius: 10px;
+  padding: 5% 10%;
+  display: flex;
+  justify-content: space-between;
+}
+.section-four{
+  padding: 5% 10%;
+}
+.section-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+.section-button button{
+  border-radius: 5px;
+  border: 1px solid #E5E7EB;
+  padding: 2% 10%;
+}
+.action{
+  flex-grow: 2;
+}
+.action h3, .action p{
+  margin: 0;
 }
 
+/*FOOTER*/
 footer{
   display: flex;
   justify-content: center;
